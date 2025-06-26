@@ -145,7 +145,7 @@ def tsp(G):
 
     fg = 0
     for i in range(n):
-        if dp[(1 << n) - 1][i] <= n * 100:
+        if dp[(1 << n) - 1][i] <= float('inf'):
             fg = 1
 
     if fg == 0:
